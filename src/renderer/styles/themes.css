@@ -1,0 +1,697 @@
+/* =================================
+   Resume Preview Themes
+   10 professional theme styles
+   ================================= */
+
+/* Base Resume Styles */
+.resume-preview {
+    font-family: 'Open Sans', sans-serif;
+    color: #2C2C2C;
+    line-height: 1.6;
+}
+
+.resume-header {
+    margin-bottom: 24px;
+}
+
+.resume-name {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.resume-contact {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.resume-contact-item {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.resume-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-bottom: 16px;
+}
+
+.resume-section {
+    margin-bottom: 24px;
+}
+
+.resume-section-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.resume-entry {
+    margin-bottom: 16px;
+}
+
+.resume-entry-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 4px;
+}
+
+.resume-entry-title {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.resume-entry-subtitle {
+    font-style: italic;
+    color: #666;
+}
+
+.resume-entry-date {
+    color: #666;
+    font-size: 14px;
+}
+
+.resume-entry-description {
+    margin-top: 8px;
+    line-height: 1.6;
+}
+
+.resume-entry-description ul {
+    margin: 8px 0;
+    padding-left: 20px;
+}
+
+.resume-entry-description li {
+    margin-bottom: 4px;
+}
+
+.resume-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.resume-skill-tag {
+    padding: 4px 12px;
+    border-radius: 16px;
+    font-size: 14px;
+}
+
+/* ============ THEME: MODERN ============ */
+.theme-modern .resume-name {
+    color: #8B2635;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.theme-modern .resume-section-title {
+    color: #8B2635;
+    border-bottom: 3px solid #D4AF37;
+    padding-bottom: 8px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.theme-modern .resume-entry-title {
+    color: #8B2635;
+}
+
+.theme-modern .resume-skill-tag {
+    background: #8B2635;
+    color: white;
+}
+
+.theme-modern .resume-header {
+    text-align: center;
+    border-bottom: 2px solid #D4AF37;
+    padding-bottom: 16px;
+}
+
+/* ============ THEME: PROFESSIONAL ============ */
+.theme-professional .resume-name {
+    color: #1B4965;
+    font-family: 'Merriweather', serif;
+}
+
+.theme-professional .resume-section-title {
+    color: #1B4965;
+    border-bottom: 2px solid #5FA8D3;
+    padding-bottom: 6px;
+    font-family: 'Merriweather', serif;
+}
+
+.theme-professional .resume-entry-title {
+    color: #1B4965;
+    font-family: 'Lato', sans-serif;
+}
+
+.theme-professional .resume-skill-tag {
+    background: #5FA8D3;
+    color: white;
+}
+
+.theme-professional .resume-header {
+    border-left: 4px solid #62B6CB;
+    padding-left: 16px;
+}
+
+/* ============ THEME: CREATIVE ============ */
+.theme-creative .resume-name {
+    color: #FF6B9D;
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+}
+
+.theme-creative .resume-section-title {
+    color: #2D3436;
+    background: linear-gradient(90deg, #C44569 0%, transparent 100%);
+    padding: 8px 12px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 4px;
+    border: none;
+}
+
+.theme-creative .resume-entry-title {
+    color: #FF6B9D;
+}
+
+.theme-creative .resume-skill-tag {
+    background: linear-gradient(135deg, #FF6B9D, #C44569);
+    color: white;
+}
+
+.theme-creative .resume-header {
+    background: linear-gradient(135deg, rgba(255, 107, 157, 0.1), rgba(196, 69, 105, 0.1));
+    padding: 24px;
+    border-radius: 8px;
+}
+
+/* ============ THEME: MINIMALIST ============ */
+.theme-minimalist .resume-name {
+    color: #2F3640;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+    font-size: 40px;
+}
+
+.theme-minimalist .resume-section-title {
+    color: #2F3640;
+    border-bottom: 1px solid #95A5A6;
+    padding-bottom: 4px;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.theme-minimalist .resume-entry-title {
+    color: #2F3640;
+    font-weight: 600;
+}
+
+.theme-minimalist .resume-skill-tag {
+    background: transparent;
+    color: #333;
+    border: 1px solid #BDC3C7;
+}
+
+.theme-minimalist .resume-header {
+    margin-bottom: 40px;
+}
+
+/* ============ THEME: EXECUTIVE ============ */
+.theme-executive .resume-name {
+    color: #1E3A5F;
+    font-family: 'Playfair Display', serif;
+    font-size: 38px;
+}
+
+.theme-executive .resume-section-title {
+    color: #1E3A5F;
+    border-top: 2px solid #C9A35C;
+    border-bottom: 2px solid #C9A35C;
+    padding: 8px 0;
+    font-family: 'Playfair Display', serif;
+}
+
+.theme-executive .resume-entry-title {
+    color: #1E3A5F;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.theme-executive .resume-skill-tag {
+    background: #1E3A5F;
+    color: #D4AF69;
+}
+
+.theme-executive .resume-header {
+    text-align: center;
+    border-top: 3px solid #C9A35C;
+    border-bottom: 3px solid #C9A35C;
+    padding: 20px 0;
+}
+
+/* ============ THEME: ACADEMIC ============ */
+.theme-academic .resume-name {
+    color: #0C2340;
+    font-family: 'Georgia', serif;
+}
+
+.theme-academic .resume-section-title {
+    color: #0C2340;
+    border-bottom: 2px solid #8B4513;
+    padding-bottom: 6px;
+    font-family: 'Georgia', serif;
+    font-variant: small-caps;
+}
+
+.theme-academic .resume-entry-title {
+    color: #0C2340;
+}
+
+.theme-academic .resume-skill-tag {
+    background: #8B4513;
+    color: white;
+}
+
+.theme-academic .resume-header {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+/* ============ THEME: TECHNICAL ============ */
+.theme-technical .resume-name {
+    color: #00A86B;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.theme-technical .resume-section-title {
+    color: #00A86B;
+    background: #E0F2F1;
+    padding: 8px 12px;
+    border-left: 4px solid #008B8B;
+    font-family: 'Roboto', sans-serif;
+}
+
+.theme-technical .resume-entry-title {
+    color: #00A86B;
+    font-family: 'Roboto', sans-serif;
+}
+
+.theme-technical .resume-skill-tag {
+    background: #008B8B;
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 12px;
+}
+
+.theme-technical .resume-header {
+    border-left: 6px solid #00A86B;
+    padding-left: 20px;
+}
+
+/* ============ THEME: CLASSIC ============ */
+.theme-classic .resume-name {
+    color: #6B1F3D;
+    font-family: 'Garamond', serif;
+    font-size: 36px;
+    text-align: center;
+}
+
+.theme-classic .resume-section-title {
+    color: #6B1F3D;
+    text-align: center;
+    border-bottom: 3px double #B8733A;
+    padding-bottom: 8px;
+    font-family: 'Garamond', serif;
+}
+
+.theme-classic .resume-entry-title {
+    color: #6B1F3D;
+}
+
+.theme-classic .resume-skill-tag {
+    background: #B8733A;
+    color: white;
+}
+
+.theme-classic .resume-header {
+    text-align: center;
+    border-top: 3px double #B8733A;
+    border-bottom: 3px double #B8733A;
+    padding: 20px 0;
+}
+
+.theme-classic .resume-contact {
+    justify-content: center;
+}
+
+/* ============ THEME: BOLD ============ */
+.theme-bold .resume-name {
+    color: #E84A5F;
+    font-family: 'Oswald', sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.theme-bold .resume-section-title {
+    color: white;
+    background: #E84A5F;
+    padding: 12px 16px;
+    font-family: 'Oswald', sans-serif;
+    border: none;
+    font-weight: 700;
+}
+
+.theme-bold .resume-entry-title {
+    color: #E84A5F;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+
+.theme-bold .resume-skill-tag {
+    background: #FF847C;
+    color: white;
+    font-weight: 700;
+}
+
+.theme-bold .resume-header {
+    background: linear-gradient(135deg, rgba(232, 74, 95, 0.1), rgba(255, 132, 124, 0.1));
+    padding: 24px;
+    border-left: 6px solid #E84A5F;
+}
+
+/* ============ THEME: ELEGANT ============ */
+.theme-elegant .resume-name {
+    color: #663399;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.theme-elegant .resume-section-title {
+    color: #663399;
+    border-bottom: 1px solid #9B59B6;
+    padding-bottom: 8px;
+    font-family: 'Cormorant Garamond', serif;
+    position: relative;
+}
+
+.theme-elegant .resume-section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 60px;
+    height: 2px;
+    background: #BB8FCE;
+}
+
+.theme-elegant .resume-entry-title {
+    color: #663399;
+    font-family: 'Crimson Text', serif;
+}
+
+.theme-elegant .resume-skill-tag {
+    background: #9B59B6;
+    color: white;
+}
+
+.theme-elegant .resume-header {
+    text-align: center;
+    border-top: 2px solid #9B59B6;
+    border-bottom: 2px solid #9B59B6;
+    padding: 24px 0;
+}
+
+.theme-elegant .resume-contact {
+    justify-content: center;
+    font-family: 'Crimson Text', serif;
+}
+
+/* ============ COUNTRY-SPECIFIC STYLES ============ */
+.resume-photo-container {
+    float: right;
+    margin-left: 16px;
+    margin-bottom: 16px;
+}
+
+.resume-personal-info {
+    text-align: center;
+    border-top: 3px solid #C9A35C;
+    border-bottom: 3px solid #C9A35C;
+    padding: 20px 0;
+}
+
+/* ============ THEME: ACADEMIC ============ */
+.theme-academic .resume-name {
+    color: #0C2340;
+    font-family: 'Georgia', serif;
+}
+
+.theme-academic .resume-section-title {
+    color: #0C2340;
+    border-bottom: 2px solid #8B4513;
+    padding-bottom: 6px;
+    font-family: 'Georgia', serif;
+    font-variant: small-caps;
+}
+
+.theme-academic .resume-entry-title {
+    color: #0C2340;
+}
+
+.theme-academic .resume-skill-tag {
+    background: #8B4513;
+    color: white;
+}
+
+.theme-academic .resume-header {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+/* ============ THEME: TECHNICAL ============ */
+.theme-technical .resume-name {
+    color: #00A86B;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.theme-technical .resume-section-title {
+    color: #00A86B;
+    background: #E0F2F1;
+    padding: 8px 12px;
+    border-left: 4px solid #008B8B;
+    font-family: 'Roboto', sans-serif;
+}
+
+.theme-technical .resume-entry-title {
+    color: #00A86B;
+    font-family: 'Roboto', sans-serif;
+}
+
+.theme-technical .resume-skill-tag {
+    background: #008B8B;
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 12px;
+}
+
+.theme-technical .resume-header {
+    border-left: 6px solid #00A86B;
+    padding-left: 20px;
+}
+
+/* ============ THEME: CLASSIC ============ */
+.theme-classic .resume-name {
+    color: #6B1F3D;
+    font-family: 'Garamond', serif;
+    font-size: 36px;
+    text-align: center;
+}
+
+.theme-classic .resume-section-title {
+    color: #6B1F3D;
+    text-align: center;
+    border-bottom: 3px double #B8733A;
+    padding-bottom: 8px;
+    font-family: 'Garamond', serif;
+}
+
+.theme-classic .resume-entry-title {
+    color: #6B1F3D;
+}
+
+.theme-classic .resume-skill-tag {
+    background: #B8733A;
+    color: white;
+}
+
+.theme-classic .resume-header {
+    text-align: center;
+    border-top: 3px double #B8733A;
+    border-bottom: 3px double #B8733A;
+    padding: 20px 0;
+}
+
+.theme-classic .resume-contact {
+    justify-content: center;
+}
+
+/* ============ THEME: BOLD ============ */
+.theme-bold .resume-name {
+    color: #E84A5F;
+    font-family: 'Oswald', sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.theme-bold .resume-section-title {
+    color: white;
+    background: #E84A5F;
+    padding: 12px 16px;
+    font-family: 'Oswald', sans-serif;
+    border: none;
+    font-weight: 700;
+}
+
+.theme-bold .resume-entry-title {
+    color: #E84A5F;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+
+.theme-bold .resume-skill-tag {
+    background: #FF847C;
+    color: white;
+    font-weight: 700;
+}
+
+.theme-bold .resume-header {
+    background: linear-gradient(135deg, rgba(232, 74, 95, 0.1), rgba(255, 132, 124, 0.1));
+    padding: 24px;
+    border-left: 6px solid #E84A5F;
+}
+
+/* ============ THEME: ELEGANT ============ */
+.theme-elegant .resume-name {
+    color: #663399;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.theme-elegant .resume-section-title {
+    color: #663399;
+    border-bottom: 1px solid #9B59B6;
+    padding-bottom: 8px;
+    font-family: 'Cormorant Garamond', serif;
+    position: relative;
+}
+
+.theme-elegant .resume-section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 60px;
+    height: 2px;
+    background: #BB8FCE;
+}
+
+.theme-elegant .resume-entry-title {
+    color: #663399;
+    font-family: 'Crimson Text', serif;
+}
+
+.theme-elegant .resume-skill-tag {
+    background: #9B59B6;
+    color: white;
+}
+
+.theme-elegant .resume-header {
+    text-align: center;
+    border-top: 2px solid #9B59B6;
+    border-bottom: 2px solid #9B59B6;
+    padding: 24px 0;
+}
+
+.theme-elegant .resume-contact {
+    justify-content: center;
+    font-family: 'Crimson Text', serif;
+}
+
+/* ============ COUNTRY-SPECIFIC STYLES ============ */
+.resume-photo-container {
+    float: right;
+    margin-left: 16px;
+    margin-bottom: 16px;
+}
+
+.resume-personal-info {
+    margin-bottom: 16px;
+    font-size: 14px;
+    color: #666;
+}
+
+.resume-personal-info span {
+    display: inline-block;
+    margin-right: 16px;
+}
+
+/* ============ PAGE LAYOUT & PAGINATION ============ */
+.resume-page {
+    background: white;
+    width: 210mm;
+    min-height: 297mm;
+    padding: 20mm;
+    margin-bottom: 16px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    position: relative;
+    page-break-after: always;
+}
+
+.resume-page:last-child {
+    page-break-after: auto;
+}
+
+/* Ensure sections don't break across pages */
+.resume-section {
+    page-break-inside: avoid;
+}
+
+/* Page break utilities */
+.page-break {
+    page-break-before: always;
+    break-before: page;
+}
+
+.no-page-break {
+    page-break-inside: avoid;
+    break-inside: avoid;
+}
+
+/* PDF generation fixes */
+@media print {
+    .resume-page {
+        margin: 0;
+        box-shadow: none;
+        page-break-after: always;
+    }
+
+    .resume-preview {
+        width: 100%;
+    }
+}

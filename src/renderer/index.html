@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iResume - Professional Resume Builder</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/components.css">
+  <link rel="stylesheet" href="styles/themes.css">
+</head>
+
+<body>
+  <div id="app">
+    <!-- Top Bar -->
+    <header class="top-bar">
+      <div class="top-bar-left">
+        <div class="app-logo">
+          <img src="assets/icons/logo.png" alt="iResume">
+          <span>iResume</span>
+        </div>
+      </div>
+
+      <div class="top-bar-controls">
+        <div class="dropdown-container">
+          <label class="dropdown-label" for="country-select">Country</label>
+          <select id="country-select"></select>
+        </div>
+
+        <div class="dropdown-container">
+          <label class="dropdown-label" for="theme-select">Theme</label>
+          <select id="theme-select"></select>
+        </div>
+      </div>
+
+      <div class="top-bar-right">
+        <div class="ats-score-container" id="ats-score-btn">
+          <div class="ats-score-badge" id="ats-score-value">0</div>
+          <div class="ats-score-label">ATS Score</div>
+        </div>
+
+        <button class="btn-clear-data" id="clear-data-btn" title="Clear all resume data">
+          <span>🗑️</span>
+          <span>Clear Data</span>
+        </button>
+
+        <button class="btn-download" id="download-btn">
+          <span>📥</span>
+          <span>Download PDF</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Left Panel: CV Form -->
+      <div class="left-panel" id="left-panel">
+        <div class="form-controls">
+          <button class="btn-expand-all" id="expand-all-btn" title="Expand all sections">
+            <span>➕</span>
+            <span>Expand All</span>
+          </button>
+          <button class="btn-collapse-all" id="collapse-all-btn" title="Collapse all sections">
+            <span>➖</span>
+            <span>Collapse All</span>
+          </button>
+        </div>
+        <div class="form-container" id="form-container">
+          <!-- Form sections will be dynamically inserted here -->
+        </div>
+      </div>
+
+      <!-- Draggable Separator -->
+      <div class="panel-separator" id="panel-separator"></div>
+
+      <!-- Right Panel: Preview -->
+      <div class="right-panel" id="right-panel">
+        <div class="preview-container" id="preview-container">
+          <div class="preview-watermark">iResume</div>
+          <!-- Preview will be dynamically rendered here -->
+        </div>
+      </div>
+    </main>
+
+    <!-- ATS Modal -->
+    <div class="modal-overlay hidden" id="ats-modal-overlay">
+      <div class="modal">
+        <div class="modal-header">
+          <h2 class="modal-title">
+            <span>📊</span>
+            <span>ATS Score Details</span>
+          </h2>
+          <button class="modal-close" id="modal-close">×</button>
+        </div>
+        <div class="modal-body" id="ats-modal-body">
+          <!-- ATS details will be rendered here -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+  <!-- Data -->
+  <script src="js/data/countries.js"></script>
+  <script src="js/data/themes.js"></script>
+
+  <!-- Services -->
+  <script src="js/services/storage.js"></script>
+  <script src="js/services/ats-scorer.js"></script>
+  <script src="js/services/pdf-generator.js"></script>
+
+  <!-- Components -->
+  <script src="js/components/panel-resizer.js"></script>
+  <script src="js/components/ats-modal.js"></script>
+  <script src="js/components/preview.js"></script>
+  <script src="js/components/form-sections/personal-info.js"></script>
+  <script src="js/components/form-sections/summary.js"></script>
+  <script src="js/components/form-sections/experience.js"></script>
+  <script src="js/components/form-sections/education.js"></script>
+  <script src="js/components/form-sections/skills.js"></script>
+  <script src="js/components/form-sections/certifications.js"></script>
+  <script src="js/components/form-sections/projects.js"></script>
+  <script src="js/components/form-sections/languages.js"></script>
+  <script src="js/components/form-sections/references.js"></script>
+
+  <!-- Main App -->
+  <script src="js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+{
+  "name": "iresume",
+  "version": "1.0.0",
+  "description": "Fully offline desktop resume maker with 50+ country formats and ATS scoring",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder",
+    "build:win": "electron-builder --win",
+    "build:mac": "electron-builder --mac"
+  },
+  "keywords": [
+    "resume",
+    "cv",
+    "ats",
+    "offline",
+    "desktop"
+  ],
+  "author": "Quan Aun",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^28.0.0",
+    "electron-builder": "^24.9.1"
+  },
+  "dependencies": {
+    "jspdf": "^2.5.1",
+    "html2canvas": "^1.4.1"
+  },
+  "build": {
+    "appId": "com.quanaun.iresume",
+    "productName": "iResume",
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        },
+        {
+          "target": "portable",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "src/renderer/assets/icons/app-icon.png"
+    },
+    "mac": {
+      "target": [
+        {
+          "target": "dmg",
+          "arch": [
+            "x64",
+            "arm64"
+          ]
+        },
+        {
+          "target": "zip",
+          "arch": [
+            "x64",
+            "arm64"
+          ]
+        }
+      ],
+      "category": "public.app-category.productivity",
+      "icon": "src/renderer/assets/icons/app-icon.png",
+      "hardenedRuntime": false,
+      "gatekeeperAssess": false
+    },
+    "dmg": {
+      "title": "iResume Installer",
+      "icon": "src/renderer/assets/icons/app-icon.png",
+      "contents": [
+        {
+          "x": 130,
+          "y": 220
+        },
+        {
+          "x": 410,
+          "y": 220,
+          "type": "link",
+          "path": "/Applications"
+        }
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "iResume"
+    },
+    "files": [
+      "main.js",
+      "preload.js",
+      "src/**/*",
+      "!src/**/*.md"
+    ],
+    "extraFiles": []
+  }
+}
