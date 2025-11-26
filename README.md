@@ -2,7 +2,7 @@
 
 **Professional Resume Builder - Fully Offline Desktop Application**
 
-Create ATS-optimized resumes with support for 50+ countries and 10 professional themes.
+Created ATS-optimized resumes with support for 50+ countries and 10 professional themes.
 
 ## Features
 
@@ -44,7 +44,7 @@ npm run build
 
 ## Developer
 
-**Quan Aun**
+**Karan Joshi (Quan Aun)**
 
 ## Version
 
